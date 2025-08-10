@@ -1,1 +1,51 @@
+body {
+    background-color: #f9d6e3; /* Rosa suave */
+    font-family: Serif;
+    color: #19171B;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
 
+h1 {
+    padding: 20px;
+}
+
+.malla {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.semestre {
+    background-color: #f7b6c7;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 15px;
+    width: 280px;
+}
+
+.semestre h2 {
+    color: #75020F;
+}
+
+button {
+    display: block;
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #75020F;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #9E4D57;
+    cursor: not-allowed;
+}
+
+button.aprobado {
+    background-color: green;
+}
