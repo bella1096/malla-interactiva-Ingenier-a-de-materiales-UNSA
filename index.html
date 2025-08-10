@@ -1,1 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Malla Interactiva - Ingeniería de Materiales</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Malla Curricular Interactiva - Ingeniería de Materiales</h1>
+    <p>Haz clic en un ramo para marcarlo como aprobado. Esto desbloqueará los cursos que lo tengan como requisito.</p>
+
+    <div class="malla">
+        <!-- PRIMER AÑO -->
+        <div class="semestre">
+            <h2>Semestre 1</h2>
+            <button data-name="Calculo I" data-unlocks="Calculo II">Calculo I</button>
+            <button data-name="Física I" data-unlocks="Física II">Física I</button>
+            <button data-name="Química general" data-unlocks="Química orgánica,Termodinámica y cinética">Química general</button>
+            <button data-name="Metodología del trabajo académico">Metodología del trabajo académico</button>
+            <button data-name="Dibujo en ingeniería">Dibujo en ingeniería</button>
+            <button data-name="Fundamentos de la matemática">Fundamentos de la matemática</button>
+        </div>
+
+        <div class="semestre">
+            <h2>Semestre 2</h2>
+            <button data-name="Calculo II" data-unlocks="Ecuaciones diferenciales" disabled>Calculo II</button>
+            <button data-name="Física II" data-unlocks="Física moderna" disabled>Física II</button>
+            <button data-name="Química orgánica">Química orgánica</button>
+            <button data-name="Introducción a Ingeniería de materiales" data-unlocks="Ciencia de materiales I">Introducción a Ingeniería de materiales</button>
+            <button data-name="Realidad nacional">Realidad nacional</button>
+            <button data-name="Lingüística, comprensión y redacción académica">Lingüística, comprensión y redacción académica</button>
+        </div>
+
+        <!-- SEGUNDO AÑO -->
+        <div class="semestre">
+            <h2>Semestre 3</h2>
+            <button data-name="Ciudadanía e interculturalidad">Ciudadanía e interculturalidad</button>
+            <button data-name="Ecuaciones diferenciales" data-unlocks="Álgebra lineal" disabled>Ecuaciones diferenciales</button>
+            <button data-name="Física moderna" data-unlocks="Mecánica de materiales" disabled>Física moderna</button>
+            <button data-name="Estadística y diseño experimental aplicada a ingeniería de materiales" data-unlocks="Gestión y control de calidad">Estadística y diseño experimental aplicada a ingeniería de materiales</button>
+            <button data-name="Termodinámica y cinética" data-unlocks="Fenómenos de transferencia" disabled>Termodinámica y cinética</button>
+            <button data-name="Filosofía de las ciencias">Filosofía de las ciencias</button>
+        </div>
+
+        <div class="semestre">
+            <h2>Semestre 4</h2>
+            <button data-name="Ecología y conservación ambiental">Ecología y conservación ambiental</button>
+            <button data-name="Álgebra lineal" data-unlocks="Métodos numéricos aplicados a la ingeniería" disabled>Álgebra lineal</button>
+            <button data-name="Mecánica de materiales" data-unlocks="Ensayo de materiales" disabled>Mecánica de materiales</button>
+            <button data-name="Ciencia de materiales I" data-unlocks="Ciencia de materiales II" disabled>Ciencia de materiales I</button>
+            <button data-name="Fenómenos de transferencia" data-unlocks="Transformación de fases" disabled>Fenómenos de transferencia</button>
+            <button data-name="Economía general">Economía general</button>
+        </div>
+
+        <!-- TERCER AÑO -->
+        <div class="semestre">
+            <h2>Semestre 5</h2>
+            <button data-name="Ética general y deontología">Ética general y deontología</button>
+            <button data-name="Gestión y control de calidad">Gestión y control de calidad</button>
+            <button data-name="Transformación de fases" data-unlocks="Materiales metálicos,Materiales cerámicos I" disabled>Transformación de fases</button>
+            <button data-name="Métodos numéricos aplicados a la ingeniería">Métodos numéricos aplicados a la ingeniería</button>
+            <button data-name="Ciencia de materiales II" data-unlocks="Materiales polímeros I,Métodos de caracterización de materiales" disabled>Ciencia de materiales II</button>
+            <button data-name="Inglés">Inglés</button>
+        </div>
+
+        <div class="semestre">
+            <h2>Semestre 6</h2>
+            <button data-name="Materiales polímeros I" data-unlocks="Materiales polímeros II" disabled>Materiales polímeros I</button>
+            <button data-name="Materiales metálicos" data-unlocks="Soldadura en materiales metálicos" disabled>Materiales metálicos</button>
+            <button data-name="Ensayo de materiales" data-unlocks="Ensayos no destructivos,Mecánica de la fractura" disabled>Ensayo de materiales</button>
+            <button data-name="Seguridad industrial y prevención de riesgos">Seguridad industrial y prevención de riesgos</button>
+            <button data-name="Métodos de caracterización de materiales" data-unlocks="Corrosión y degradación de materiales" disabled>Métodos de caracterización de materiales</button>
+        </div>
+
+        <!-- CUARTO AÑO -->
+        <div class="semestre">
+            <h2>Semestre 7</h2>
+            <button data-name="Corrosión y degradación de materiales" data-unlocks="Ingeniería de superficies" disabled>Corrosión y degradación de materiales</button>
+            <button data-name="Materiales cerámicos I" data-unlocks="Materiales cerámicos II" disabled>Materiales cerámicos I</button>
+            <button data-name="Materiales polímeros II" data-unlocks="Polímeros avanzados" disabled>Materiales polímeros II</button>
+            <button data-name="Soldadura en materiales metálicos" data-unlocks="Fundición de materiales" disabled>Soldadura en materiales metálicos</button>
+            <button data-name="Ensayos no destructivos">Ensayos no destructivos</button>
+            <button data-name="Nanomateriales">Nanomateriales</button>
+        </div>
+
+        <div class="semestre">
+            <h2>Semestre 8</h2>
+            <button data-name="Materiales cerámicos II" data-unlocks="Cerámicos avanzados" disabled>Materiales cerámicos II</button>
+            <button data-name="Polímeros avanzados" data-unlocks="Materiales compuestos I" disabled>Polímeros avanzados</button>
+            <button data-name="Ingeniería de superficies" data-unlocks="Unión de materiales" disabled>Ingeniería de superficies</button>
+            <button data-name="Mecánica de la fractura" data-unlocks="Simulación por elementos finitos" disabled>Mecánica de la fractura</button>
+            <button data-name="Análisis de fallas">Análisis de fallas</button>
+            <button data-name="Fundición de materiales">Fundición de materiales</button>
+        </div>
+
+        <!-- QUINTO AÑO -->
+        <div class="semestre">
+            <h2>Semestre 9</h2>
+            <button data-name="Materiales compuestos I" data-unlocks="Materiales compuestos II" disabled>Materiales compuestos I</button>
+            <button data-name="Selección de materiales">Selección de materiales</button>
+            <button data-name="Simulación por elementos finitos">Simulación por elementos finitos</button>
+            <button data-name="Cerámicos avanzados">Cerámicos avanzados</button>
+            <button data-name="Unión de materiales">Unión de materiales</button>
+            <button data-name="Tecnología de concreto y sus materiales">Tecnología de concreto y sus materiales</button>
+        </div>
+
+        <div class="semestre">
+            <h2>Semestre 10</h2>
+            <button data-name="Trabajo de investigación">Trabajo de investigación</button>
+            <button data-name="Materiales compuestos II">Materiales compuestos II</button>
+            <button data-name="Optimización de procesos">Optimización de procesos</button>
+            <button data-name="Manufactura aditiva">Manufactura aditiva</button>
+            <button data-name="Biomateriales">Biomateriales</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
 
